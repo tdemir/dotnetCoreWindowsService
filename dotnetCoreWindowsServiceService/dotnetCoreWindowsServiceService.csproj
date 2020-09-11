@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-dotnetCoreWindowsServiceService-7007AF0F-24D5-40B9-81E5-E29E067913ED</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="3.1.8" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\dotnetCoreWindowsServiceCore\dotnetCoreWindowsServiceCore.csproj" />
+  </ItemGroup>
+</Project>
